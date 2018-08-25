@@ -21,7 +21,7 @@ import com.vaadin.external.org.slf4j.LoggerFactory;
  * A singleton class to create a static reference to a 
  * Kafka producer that his the broker at localhost:9092
  * 
- * @author kwas7493
+ * @author kwasi
  *
  */
 
