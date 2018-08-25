@@ -19,7 +19,7 @@ import com.vaadin.external.org.slf4j.LoggerFactory;
 
 /**
  * A singleton class to create a static reference to a 
- * Kafka producer that his the broker at csc-kasante7l3.esri.com:9092
+ * Kafka producer that his the broker at localhost:9092
  * 
  * @author kwas7493
  *
@@ -34,7 +34,7 @@ public class AppKafkaProducerClient {
 	
 	private AppKafkaProducerClient() {
 		final Properties props = new Properties();
-		props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.80.128:9092");//"csc-kasante7l3.esri.com:");
+		props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
 		props.put(ProducerConfig.ACKS_CONFIG, "all");
 		props.put(ProducerConfig.RETRIES_CONFIG, 0);
 		props.put(ProducerConfig.BATCH_SIZE_CONFIG, 16384);

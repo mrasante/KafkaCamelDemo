@@ -19,7 +19,7 @@ public class AppKafkaConsumerClient {
 	
 	private AppKafkaConsumerClient() {
 		final Properties props = new Properties();
-		props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.80.128:9092"); //"csc-kasante7l3.esri.com:9092");
+		props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092"); 
 		props.put(ConsumerConfig.CLIENT_ID_CONFIG, "interview_test_app");
 		props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
